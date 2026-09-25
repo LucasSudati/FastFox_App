@@ -679,10 +679,48 @@
 .hero-logo-ring::before,.hero-logo-ring::after{display:none!important}
 .asset-icon{background:transparent!important;width:58px!important;height:58px!important;border-radius:0!important}
 .asset-icon img{width:100%;height:100%;object-fit:contain}
-.tool-sprite{display:block;width:48px;height:48px;background-image:url('assets/tools.png');background-size:192px 192px;background-repeat:no-repeat;filter:drop-shadow(0 3px 8px rgba(0,0,0,.28))}
-.tool-1{background-position:0 0}.tool-2{background-position:-48px 0}.tool-3{background-position:-96px 0}.tool-4{background-position:-144px 0}
-.tool-5{background-position:0 -48px}.tool-6{background-position:-48px -48px}.tool-7{background-position:-96px -48px}.tool-8{background-position:-144px -48px}
-.tool-9{background-position:0 -96px}.tool-10{background-position:-48px -96px}
+
+
+
+
+
+
+/* Sprite ORIGINAL do FastFox App: icons.png (grade 4x4, 64px por ícone) */
+.original-tool-icon{
+  display:block;
+  width:64px;
+  height:64px;
+  flex:0 0 64px;
+  background-image:url("assets/icons.png");
+  background-repeat:no-repeat;
+  background-size:256px 256px;
+}
+
+/* posições exatas dentro do sprite original */
+.ico-brush      { background-position:   0px    0px; }
+.ico-eraser     { background-position: -64px    0px; }
+.ico-undo       { background-position:-128px    0px; }
+.ico-redo       { background-position:-192px    0px; }
+
+.ico-eyedropper { background-position:   0px  -64px; }
+.ico-transform  { background-position: -64px  -64px; }
+.ico-save       { background-position:-128px  -64px; }
+.ico-open       { background-position:-192px  -64px; }
+
+.ico-stamp      { background-position:   0px -128px; }
+.ico-mask       { background-position: -64px -128px; }
+.ico-selection  { background-position:-128px -128px; }
+.ico-export     { background-position:-192px -128px; }
+
+.ico-text       { background-position:   0px -192px; }
+.ico-paintmode  { background-position: -64px -192px; }
+.ico-touch      { background-position:-128px -192px; }
+.ico-symmetry   { background-position:-192px -192px; }
+
+.tool .original-tool-icon{
+  margin-bottom:10px;
+  filter:none;
+}
 
 </style>
 </head>
@@ -787,16 +825,16 @@
         </div>
 
         <div class="tool-grid">
-          <div class="tool"><span class="tool-sprite tool-1" aria-hidden="true"></span><b>Pincel</b></div>
-          <div class="tool"><span class="tool-sprite tool-2" aria-hidden="true"></span><b>Borracha</b></div>
-          <div class="tool"><span class="tool-sprite tool-3" aria-hidden="true"></span><b>Conta-gotas</b></div>
-          <div class="tool"><span class="tool-sprite tool-4" aria-hidden="true"></span><b>Cores</b></div>
-          <div class="tool"><span class="tool-sprite tool-5" aria-hidden="true"></span><b>Decals</b></div>
-          <div class="tool"><span class="tool-sprite tool-6" aria-hidden="true"></span><b>Texto</b></div>
-          <div class="tool"><span class="tool-sprite tool-7" aria-hidden="true"></span><b>Simetria</b></div>
-          <div class="tool"><span class="tool-sprite tool-8" aria-hidden="true"></span><b>Transformação</b></div>
-          <div class="tool"><span class="tool-sprite tool-9" aria-hidden="true"></span><b>Biblioteca</b></div>
-          <div class="tool"><span class="tool-sprite tool-10" aria-hidden="true"></span><b>Exportação</b></div>
+          <div class="tool"><span class="original-tool-icon ico-brush" aria-hidden="true"></span><b>Pincel</b></div>
+          <div class="tool"><span class="original-tool-icon ico-eraser" aria-hidden="true"></span><b>Borracha</b></div>
+          <div class="tool"><span class="original-tool-icon ico-eyedropper" aria-hidden="true"></span><b>Conta-gotas</b></div>
+          <div class="tool"><span class="original-tool-icon ico-stamp" aria-hidden="true"></span><b>Carimbo</b></div>
+          <div class="tool"><span class="original-tool-icon ico-mask" aria-hidden="true"></span><b>Máscara</b></div>
+          <div class="tool"><span class="original-tool-icon ico-text" aria-hidden="true"></span><b>Texto</b></div>
+          <div class="tool"><span class="original-tool-icon ico-symmetry" aria-hidden="true"></span><b>Simetria</b></div>
+          <div class="tool"><span class="original-tool-icon ico-transform" aria-hidden="true"></span><b>Transformação</b></div>
+          <div class="tool"><span class="original-tool-icon ico-open" aria-hidden="true"></span><b>Biblioteca</b></div>
+          <div class="tool"><span class="original-tool-icon ico-export" aria-hidden="true"></span><b>Exportação</b></div>
         </div>
       </div>
     </section>
