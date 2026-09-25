@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FastFox — ferramentas integradas para Assetto Corsa e para o ecossistema dos servidores FastFox.">
+<meta name="theme-color" content="#ff7900">
+<title>FastFox — Assetto Corsa</title>
+<style>
+:root{--o:#ff7900;--bg:#0d0e10;--card:#191b20;--text:#f4f4f5;--muted:#a5a7ad;--line:#2a2c31;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,#ff79001f,transparent 28rem),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.c{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#0d0e10dd;backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.12em}.brand b{color:var(--o)}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:var(--o)}
+.hero{min-height:650px;display:grid;align-items:center;border-bottom:1px solid var(--line)}.heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.eyebrow,.kicker{color:var(--o);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}h1{font-size:clamp(60px,10vw,112px);line-height:.85;letter-spacing:-.07em;margin:16px 0 25px}h1 span{color:var(--o)}.lead{font-size:21px;color:#c9c9cc;max-width:700px}.note{margin-top:25px;padding-left:18px;border-left:3px solid var(--o);color:var(--muted)}.fox{aspect-ratio:1;border:1px solid #ff790044;border-radius:50%;display:grid;place-items:center;font-size:150px;background:radial-gradient(circle,#ff790025,transparent 65%)}
+section{padding:90px 0}.title{font-size:clamp(34px,5vw,54px);letter-spacing:-.04em;margin:7px 0 12px}.intro{max-width:760px;color:var(--muted);margin-bottom:38px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:28px;background:#191b20cc;border:1px solid var(--line)}.card i{font-style:normal;font-size:30px}.card h3{font-size:21px;margin:14px 0 7px}.card p{margin:0;color:var(--muted)}
+.paint{border-block:1px solid var(--line);background:linear-gradient(#ff79000b,transparent)}.tools{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.tool{padding:16px 10px;text-align:center;background:#22242a;border:1px solid var(--line)}
+.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.step{min-height:115px;padding:16px;background:#191b20;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.step b{color:var(--o);font-size:12px}.req{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.req div{padding:22px;background:#191b20;border-left:3px solid var(--o)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 22px;background:#1c1e23;border:1px solid var(--line);font-weight:700}.btn.primary{background:var(--o);border-color:var(--o)}
+footer{padding:50px 0;border-top:1px solid var(--line);color:var(--muted)}footer strong{color:var(--text)}
+@media(max-width:850px){.heroGrid{grid-template-columns:1fr}.fox{max-width:280px}.grid{grid-template-columns:1fr}.tools{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr 1fr}.req{grid-template-columns:1fr 1fr}.links{display:none}}
+@media(max-width:500px){.tools,.flow,.req{grid-template-columns:1fr}.c{width:calc(100% - 28px)}}
+
+.brand{display:flex;align-items:center;gap:10px}
+.brand-logo{width:38px;height:38px;object-fit:contain}
+.fox img{width:72%;height:72%;object-fit:contain;filter:drop-shadow(0 0 28px rgba(255,121,0,.18))}
+.footer-logo{display:flex;align-items:center;gap:10px}
+.footer-logo img{width:34px;height:34px;object-fit:contain}
+
+</style>
+</head>
+<body>
+<nav><div class="c nav"><a class="brand" href="#inicio"><img class="brand-logo" src="fastfox-logo.png" alt="FastFox"> FAST<b>FOX</b></a><div class="links"><a href="#projeto">Projeto</a><a href="#paintshop">Paintshop</a><a href="#skins">Skins</a><a href="#requisitos">Requisitos</a></div></div></nav>
+<header class="hero" id="inicio"><div class="c heroGrid"><div><div class="eyebrow">Assetto Corsa • CSP Lua App</div><h1>FAST<span>FOX</span></h1><p class="lead">Ferramentas integradas para criação, edição e gerenciamento de conteúdo diretamente no Assetto Corsa e no ecossistema dos servidores FastFox.</p><div class="note"><strong>FastFox é o nome do grupo de servidores.</strong><br>O aplicativo utiliza a mesma identidade porque foi desenvolvido especialmente para utilização dentro desse ecossistema.</div><div class="btns"><a class="btn primary" href="#paintshop">Conhecer o Paintshop</a><a class="btn" href="#projeto">Sobre o projeto</a></div></div><div class="fox"><img src="fastfox-logo.png" alt="Logo FastFox"></div></div></header>
+<main>
+<section id="projeto"><div class="c"><div class="kicker">O projeto</div><h2 class="title">Tudo dentro do jogo.</h2><p class="intro">O FastFox foi criado para reduzir a dependência de ferramentas externas durante a criação e organização de skins, mantendo pintura, documentação, gerenciamento e exportação integrados ao Assetto Corsa.</p><div class="grid"><article class="card"><i>🎨</i><h3>Paintshop</h3><p>Crie e edite pinturas diretamente sobre o carro durante a sessão.</p></article><article class="card"><i>📦</i><h3>Skins</h3><p>Organize os pacotes exportados e prepare conteúdo para utilização no ecossistema FastFox.</p></article><article class="card"><i>📖</i><h3>Manual integrado</h3><p>Consulte ferramentas, atalhos, exportação e solução de problemas sem sair do jogo.</p></article></div></div></section>
+<section class="paint" id="paintshop"><div class="c"><div class="kicker">Paintshop</div><h2 class="title">Pinte o carro. Na pista.</h2><p class="intro">O principal módulo do FastFox reúne ferramentas de pintura, decals, texto, transformação e seleção de cores em uma interface acessível diretamente pelo CSP.</p><div class="tools"><div class="tool">🖌️ Pincel</div><div class="tool">🧽 Borracha</div><div class="tool">💧 Conta-gotas</div><div class="tool">🎨 Cores</div><div class="tool">🔖 Decals</div><div class="tool">🔤 Texto</div><div class="tool">🪞 Simetria</div><div class="tool">↔️ Transformação</div><div class="tool">📚 Biblioteca</div><div class="tool">📤 Exportação</div></div></div></section>
+<section id="skins"><div class="c"><div class="kicker">Workflow</div><h2 class="title">Da ideia ao servidor.</h2><p class="intro">O fluxo acompanha a criação desde a seleção da textura até a preparação do pacote final da skin.</p><div class="flow"><div class="step"><b>01</b>Selecionar textura</div><div class="step"><b>02</b>Editar no Paintshop</div><div class="step"><b>03</b>Aplicar pintura e decals</div><div class="step"><b>04</b>Salvar trabalho</div><div class="step"><b>05</b>Exportar textura</div><div class="step"><b>06</b>Gerar pacote</div><div class="step"><b>07</b>FastFox</div></div></div></section>
+<section id="requisitos"><div class="c"><div class="kicker">Compatibilidade</div><h2 class="title">Requisitos.</h2><div class="req"><div><strong>🎮 Assetto Corsa</strong><br>Versão para PC</div><div><strong>🖥️ Content Manager</strong><br>Gerenciamento do jogo</div><div><strong>🔧 Custom Shaders Patch</strong><br>CSP compatível</div><div><strong>📜 Lua Apps</strong><br>Suporte aos apps Lua</div></div></div></section>
+<section><div class="c"><div class="kicker">Desenvolvimento</div><h2 class="title">Em evolução.</h2><p class="intro">O FastFox está em desenvolvimento ativo. Novas ferramentas, módulos, integrações e melhorias de interface serão incorporados conforme o projeto evoluir.</p><div class="btns"><a class="btn primary" href="#">GitHub</a><a class="btn" href="#">Discord FastFox</a></div></div></section>
+</main>
+<footer><div class="c"><strong class="footer-logo"><img src="fastfox-logo.png" alt=""> FASTFOX</strong><br>Uma ferramenta criada para o ecossistema FastFox dentro do Assetto Corsa.<br><small>Crie sua pintura. Organize sua skin. Entre na pista.</small></div></footer>
+</body></html>
