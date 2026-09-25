@@ -673,6 +673,17 @@
   .hero-logo-ring { width: min(350px, 82vw); }
 }
 
+
+/* FastFox official assets */
+.hero-logo-ring{border:0!important;background:radial-gradient(circle at 50% 48%,rgba(255,121,0,.14) 0%,rgba(255,121,0,.045) 42%,transparent 70%)!important;box-shadow:none!important}
+.hero-logo-ring::before,.hero-logo-ring::after{display:none!important}
+.asset-icon{background:transparent!important;width:58px!important;height:58px!important;border-radius:0!important}
+.asset-icon img{width:100%;height:100%;object-fit:contain}
+.tool-sprite{display:block;width:48px;height:48px;background-image:url('assets/tools.png');background-size:192px 192px;background-repeat:no-repeat;filter:drop-shadow(0 3px 8px rgba(0,0,0,.28))}
+.tool-1{background-position:0 0}.tool-2{background-position:-48px 0}.tool-3{background-position:-96px 0}.tool-4{background-position:-144px 0}
+.tool-5{background-position:0 -48px}.tool-6{background-position:-48px -48px}.tool-7{background-position:-96px -48px}.tool-8{background-position:-144px -48px}
+.tool-9{background-position:0 -96px}.tool-10{background-position:-48px -96px}
+
 </style>
 </head>
 
@@ -680,7 +691,7 @@
   <nav>
     <div class="container nav-shell">
       <a class="brand" href="#inicio">
-        <img src="fastfox-logo.png" alt="FastFox">
+        <img src="assets/fastfox-logo.png" alt="FastFox">
         <div>FastFox <span>App</span></div>
       </a>
 
@@ -720,7 +731,7 @@
       <div class="app-visual logo-hero">
         <div class="glow"></div>
         <div class="hero-logo-ring">
-          <img src="fastfox-logo.png" alt="Logo FastFox">
+          <img src="assets/fastfox-logo.png" alt="Logo FastFox">
         </div>
       </div>
     </div>
@@ -742,21 +753,21 @@
         <div class="cards">
           <article class="card">
             <div class="card-number">01</div>
-            <div class="card-icon">🎨</div>
+            <div class="card-icon asset-icon"><img src="assets/paintshop.png" alt=""></div>
             <h3>Paintshop</h3>
             <p>Criação e edição de pinturas diretamente sobre o carro dentro do Assetto Corsa.</p>
           </article>
 
           <article class="card">
             <div class="card-number">02</div>
-            <div class="card-icon">📦</div>
+            <div class="card-icon asset-icon"><img src="assets/skins.png" alt=""></div>
             <h3>Skins</h3>
             <p>Organização dos pacotes e preparação do conteúdo para o ecossistema FastFox.</p>
           </article>
 
           <article class="card">
             <div class="card-number">03</div>
-            <div class="card-icon">📖</div>
+            <div class="card-icon asset-icon"><img src="assets/manual.png" alt=""></div>
             <h3>Manual</h3>
             <p>Documentação integrada para consultar ferramentas e procedimentos sem sair do jogo.</p>
           </article>
@@ -776,16 +787,16 @@
         </div>
 
         <div class="tool-grid">
-          <div class="tool"><span>🖌️</span><b>Pincel</b></div>
-          <div class="tool"><span>🧽</span><b>Borracha</b></div>
-          <div class="tool"><span>💧</span><b>Conta-gotas</b></div>
-          <div class="tool"><span>🎨</span><b>Cores</b></div>
-          <div class="tool"><span>🔖</span><b>Decals</b></div>
-          <div class="tool"><span>🔤</span><b>Texto</b></div>
-          <div class="tool"><span>🪞</span><b>Simetria</b></div>
-          <div class="tool"><span>↔️</span><b>Transformação</b></div>
-          <div class="tool"><span>📚</span><b>Biblioteca</b></div>
-          <div class="tool"><span>📤</span><b>Exportação</b></div>
+          <div class="tool"><span class="tool-sprite tool-1" aria-hidden="true"></span><b>Pincel</b></div>
+          <div class="tool"><span class="tool-sprite tool-2" aria-hidden="true"></span><b>Borracha</b></div>
+          <div class="tool"><span class="tool-sprite tool-3" aria-hidden="true"></span><b>Conta-gotas</b></div>
+          <div class="tool"><span class="tool-sprite tool-4" aria-hidden="true"></span><b>Cores</b></div>
+          <div class="tool"><span class="tool-sprite tool-5" aria-hidden="true"></span><b>Decals</b></div>
+          <div class="tool"><span class="tool-sprite tool-6" aria-hidden="true"></span><b>Texto</b></div>
+          <div class="tool"><span class="tool-sprite tool-7" aria-hidden="true"></span><b>Simetria</b></div>
+          <div class="tool"><span class="tool-sprite tool-8" aria-hidden="true"></span><b>Transformação</b></div>
+          <div class="tool"><span class="tool-sprite tool-9" aria-hidden="true"></span><b>Biblioteca</b></div>
+          <div class="tool"><span class="tool-sprite tool-10" aria-hidden="true"></span><b>Exportação</b></div>
         </div>
       </div>
     </section>
@@ -822,19 +833,19 @@
 
         <div class="requirements">
           <div class="requirement">
-            <b>🎮 Assetto Corsa</b>
+            <b>Assetto Corsa</b>
             <span>Versão para PC</span>
           </div>
           <div class="requirement">
-            <b>🖥️ Content Manager</b>
+            <b>Content Manager</b>
             <span>Para gerenciamento e inicialização</span>
           </div>
           <div class="requirement">
-            <b>🔧 Custom Shaders Patch</b>
+            <b>Custom Shaders Patch</b>
             <span>Versão compatível com o aplicativo</span>
           </div>
           <div class="requirement">
-            <b>📜 Lua Apps</b>
+            <b>Lua Apps</b>
             <span>Suporte aos aplicativos Lua do CSP</span>
           </div>
         </div>
@@ -868,7 +879,7 @@
     <div class="container footer">
       <div>
         <div class="footer-brand">
-          <img src="fastfox-logo.png" alt="">
+          <img src="assets/fastfox-logo.png" alt="">
           <span>FastFox App</span>
         </div>
         <small>Ferramentas integradas ao ecossistema FastFox para Assetto Corsa.</small>
