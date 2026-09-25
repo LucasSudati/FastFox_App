@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="FastFox App — ferramentas integradas para criação, edição e gerenciamento de conteúdo no Assetto Corsa.">
-  <meta name="theme-color" content="#0b0c0f">
+  <meta name="theme-color" content="#161616">
   <title>FastFox App — Assetto Corsa</title>
 
   <style>
     :root {
-      --orange: #ff7900;
-      --orange-light: #ff9d42;
-      --bg: #090a0d;
+      /* Paleta oficial FastFox */
+      --fastfox-onyx: #161616;
+      --fastfox-orange: #FD751A;
+      --fastfox-blue: #92D0FB;
+      --fastfox-white: #FFFFFF;
+      --orange: #FD751A;
+      --orange-light: #FD751A;
+      --bg: #161616;
       --surface: #101216;
       --surface-2: #16191f;
       --surface-3: #1d2027;
@@ -37,7 +42,7 @@
       background:
         radial-gradient(circle at 82% 8%, rgba(255,121,0,.13), transparent 26rem),
         radial-gradient(circle at 10% 32%, rgba(255,121,0,.055), transparent 30rem),
-        linear-gradient(180deg, #0b0c0f 0%, #090a0d 100%);
+        linear-gradient(180deg, #161616 0%, #161616 100%);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
     }
@@ -720,6 +725,36 @@
 .tool .original-tool-icon{
   margin-bottom:10px;
   filter:none;
+}
+
+
+/* Aplicação da paleta oficial FastFox */
+::selection {
+  background: rgba(146, 208, 251, .28);
+  color: #FFFFFF;
+}
+
+.nav-links a:not(.nav-cta):hover {
+  color: #92D0FB;
+}
+
+.hero-note strong,
+.section-head strong {
+  color: #FFFFFF;
+}
+
+.tool:hover {
+  border-color: rgba(146, 208, 251, .32);
+}
+
+.requirement:hover {
+  border-color: rgba(146, 208, 251, .24);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #92D0FB;
+  outline-offset: 3px;
 }
 
 </style>
