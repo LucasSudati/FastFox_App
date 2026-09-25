@@ -601,7 +601,79 @@
       .cta { padding: 30px 24px; }
       .footer { flex-direction: column; align-items: flex-start; }
     }
-  </style>
+  
+/* Hero com logo FastFox em destaque */
+.logo-hero {
+  min-height: 530px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.logo-hero .glow {
+  width: 470px;
+  height: 470px;
+  background: rgba(255,121,0,.18);
+  filter: blur(115px);
+}
+
+.hero-logo-ring {
+  position: relative;
+  width: min(430px, 84vw);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,121,0,.22);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 48%,
+      rgba(255,121,0,.12) 0%,
+      rgba(255,121,0,.045) 42%,
+      rgba(255,121,0,.012) 63%,
+      transparent 72%);
+  box-shadow:
+    inset 0 0 80px rgba(255,121,0,.025),
+    0 0 100px rgba(255,121,0,.055);
+}
+
+.hero-logo-ring::before,
+.hero-logo-ring::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-logo-ring::before {
+  inset: 9%;
+  border: 1px solid rgba(255,255,255,.035);
+}
+
+.hero-logo-ring::after {
+  inset: -22px;
+  border: 1px solid rgba(255,121,0,.055);
+}
+
+.hero-logo-ring img {
+  width: 73%;
+  height: 73%;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 45px rgba(0,0,0,.34))
+          drop-shadow(0 0 30px rgba(255,121,0,.13));
+  animation: fastfoxFloat 5s ease-in-out infinite;
+}
+
+@keyframes fastfoxFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+@media (max-width: 720px) {
+  .logo-hero { min-height: 390px; }
+  .hero-logo-ring { width: min(350px, 82vw); }
+}
+
+</style>
 </head>
 
 <body>
@@ -645,34 +717,10 @@
         </p>
       </div>
 
-      <div class="app-visual">
+      <div class="app-visual logo-hero">
         <div class="glow"></div>
-
-        <div class="app-window">
-          <div class="app-top">
-            <img src="fastfox-logo.png" alt="">
-            <div>
-              <b>FASTFOX APP</b>
-              <small>Ferramentas para Assetto Corsa</small>
-            </div>
-          </div>
-
-          <div class="app-divider"></div>
-
-          <div class="app-label">MÓDULOS</div>
-
-          <div class="app-module active">PAINTSHOP</div>
-          <div class="app-desc">Crie e edite pinturas diretamente no carro.</div>
-
-          <div class="app-module">MANUAL</div>
-          <div class="app-desc">Documentação integrada do FastFox App.</div>
-
-          <div class="app-module">SKINS</div>
-          <div class="app-desc">Gerenciamento e organização das suas skins.</div>
-
-          <div class="floating-logo">
-            <img src="fastfox-logo.png" alt="FastFox">
-          </div>
+        <div class="hero-logo-ring">
+          <img src="fastfox-logo.png" alt="Logo FastFox">
         </div>
       </div>
     </div>
